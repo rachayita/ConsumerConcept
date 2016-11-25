@@ -1,49 +1,50 @@
-This is your new Play application
-=================================
+Consumer Concept - A dummy Project
+=================
+Create a play application using Scala and Anorm, with a Customer concept, 
+and some suitable methods like create customer purchase history or customer with most purchases
 
-This file will be packaged with your application when using `activator dist`.
+Runtime Results
+===============
+- Test query Result: true
 
-There are several demonstration files available in this template.
+- Purchase history of a ConsumerList(Purchase(1,111,456,6,2015-07-07), Purchase(2,111,119,4,2015-09-01), 
+  Purchase(3,111,327,2,2016-11-03), Purchase(7,111,456,5,2016-11-04))
+
+- Consumer with most purchases(Cuonsumer id, total purchases): (111,4)
+
+Test Cases
+==========
+
+- A Counsumer should be created
+
+- Database connection should be to retrieve data
 
 Controllers
 ===========
 
-- HomeController.scala:
+- app/HomeController.scala:
+  simple HTTP requests.
 
-  Shows how to handle simple HTTP requests.
-
-- AsyncController.scala:
-
-  Shows how to do asynchronous programming when handling a request.
-
-- CountController.scala:
-
-  Shows how to inject a component into a controller and use the component when
-  handling requests.
-
-Components
+Models
 ==========
 
-- Module.scala:
+- app/Consumer.scala
+- app/Product.scala
+- app/Purchase.scala
 
-  Shows how to use Guice to bind all the components needed by your application.
-
-- Counter.scala:
-
-  An example of a component that contains state, in this case a simple counter.
-
-- ApplicationTimer.scala:
-
-  An example of a component that starts when the application starts and stops
-  when the application stops.
-
-Filters
+Configs
 =======
 
-- Filters.scala:
+- config/evolutions/default.1.sql
+- config/application.conf
+- routes
 
-  Creates the list of HTTP filters used by your application.
+Tests
+=====
 
-- ExampleFilter.scala
+- test/PurchaseSpec.scala
 
-  A simple filter that adds a header to every response.
+SBT
+======
+
+- build.sbt

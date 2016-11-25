@@ -26,4 +26,5 @@ bin
 .DS_Store
 activator-sbt-*-shim.sbt
 project/.sbtserver.lock
+project/.sbtserver
 *.lock
