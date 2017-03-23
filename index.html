@@ -1,10 +1,10 @@
-Consumer Concept - A dummy Project
-=================
+• Consumer Concept - A dummy Project
+  =================
 Create a play application using Scala and Anorm, with a Customer concept, 
 and some suitable methods like create customer purchase history or customer with most purchases
 
-Runtime Results
-===============
+• Runtime Results
+  ===============
 - Test query Result: true
 
 - Purchase history of a ConsumerList(Purchase(1,111,456,6,2015-07-07), Purchase(2,111,119,4,2015-09-01), 
@@ -12,39 +12,39 @@ Runtime Results
 
 - Consumer with most purchases(Cuonsumer id, total purchases): (111,4)
 
-Test Cases
-==========
+• Test Cases
+  ==========
 
 - A Counsumer should be created
 
 - Database connection should be to retrieve data
 
-Controllers
-===========
+• Controllers
+  ===========
 
 - app/HomeController.scala:
   simple HTTP requests.
 
-Models
-==========
+• Models
+  ==========
 
 - app/Consumer.scala
 - app/Product.scala
 - app/Purchase.scala
 
-Configs
-=======
+• Configs
+  =======
 
 - config/evolutions/default.1.sql
 - config/application.conf
 - routes
 
-Tests
-=====
+• Tests
+  =====
 
 - test/PurchaseSpec.scala
 
-SBT
-======
+• SBT
+  ======
 
 - build.sbt
